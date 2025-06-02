@@ -23,7 +23,5 @@ export async function POST(request: Request) {
         })
     }
 
-    console.log(isValid)
-
-    return NextResponse.json({})
+    return NextResponse.json({...isValid})
 }
